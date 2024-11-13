@@ -58,3 +58,14 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+@layer utilities {
+  .scrollbar-hide {
+    /* Firefox用 */
+    scrollbar-width: none;
+    /* Chrome, Safari用 */
+    -webkit-overflow-scrolling: touch;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
